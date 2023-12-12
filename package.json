@@ -8,7 +8,8 @@
     "url": "https://github.com/rustyroad/page-builder.git"
   },
   "scripts": {
-    "start": "webpack serve --config webpack.config.js"
+    "start": "webpack serve --config webpack.config.js",
+    "bump": "npm version patch && git push --follow-tags"
   },
   "keywords": [
     "grapesjs",
