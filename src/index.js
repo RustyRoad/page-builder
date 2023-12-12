@@ -9,15 +9,16 @@ import scriptEditor from 'grapesjs-script-editor';
 // Get the container element
 var container = document.getElementById('gjs');
 
-// Check if the container exists
-if (container) {
+window.onload = function () {
+  // Check if the container exists
+  if (container) {
     // Initialize GrapesJS here
     window.editor = GrapesJS.init({
       container: '#gjs',
       height: '100%',
       fromElement: true,
       storageManager: false,
-      
+
       showOffsets: true,
       fromElement: true,
       noticeOnUnload: false,
@@ -42,7 +43,7 @@ if (container) {
         [tailwindCss]: {
           // Plugin-specific options for grapesjs-blocks-basic
         },
-     
+
         [codeEditor]: {
           // Plugin-specific options for grapesjs-blocks-basic
         },
@@ -50,10 +51,11 @@ if (container) {
           // Plugin-specific options for grapesjs-blocks-basic
         }
       }
-    
-    
-    
+
+
+
     });
-} else {
+  } else {
     console.error('The GrapesJS container does not exist in the DOM.');
-}
+  }
+};
