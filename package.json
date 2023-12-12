@@ -1,6 +1,6 @@
 {
   "name": "@rustyroad/page-builder",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1",
   "description": "Editor",
   "main": "dist/index.js",
   "repository": {
