@@ -6,10 +6,10 @@ import tailwindCss from '@rustyroad/editor';
 import projectManager from 'grapesjs-project-manager';
 import codeEditor from 'grapesjs-component-code-editor';
 import scriptEditor from 'grapesjs-script-editor';
-// Get the container element
-var container = document.getElementById('gjs');
 
 window.onload = function () {
+  // Get the container element
+  var container = document.getElementById('gjs');
   // Check if the container exists
   if (container) {
     // Initialize GrapesJS here
